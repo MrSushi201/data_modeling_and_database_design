@@ -1,0 +1,69 @@
+--# Notes from "Data Modeling - Basics" by Chayan Shrang Raj
+https://medium.com/@chayansraj/data-modeling-basics-75cbce60863c
+
+Data Modeling - Basics
+
+# Why is it important?
+When developing a database system, we need to make sure that it operates EFFICIENTLY and that we can extract information from it QUICKLY. 
+The best way to create such a system is to first design a DATA MODEL. 
+"With a data model, you can plan how data is stored and accessed within your database BEFORE you create the database system."
+
+# What is it?
+DATA MODELING is a PROCESS of developing visual representation of data elements and their relationships. 
+It tells us how our data is structured within the database. 
+This structure helps us to UNDERSTAND how data is stored, accessed, updated, and queried within the database.
+A data model acts as a guide, resembling a roadmap, an archtect's blueprint, or any formal diagram that enhances the comprehension of the design. 
+
+# The objective
+The goal is TO ILLUSTRATE the types of data used and stored within the system, the relationships among these data types, the ways the data can be grouped and organized and its formats and attributes.
+
+# How-to
+Data models are constructed based on the requirements of the business. 
+Initial rules and specifications are established through input from business stakeholders, informaing the creation of a new system or adjustment to an existing one. 
+
+The modeling of data occurs at various levels of abstraction, starting with:
+* gathering of business requirement details from stakeholders and end-users.
+These business rules are then translated into data structure to develop a tangible database design.
+
+Standardized schemas and formal techniques are employed in data modeling, ensuring a consistent and predictable approach to defining and managing data resources across an organization or even beyond. 
+In an ideal scenario, data models are dynamic documents that adapt to changing business needs. 
+They play a crucial role in supporting business processes, as well as in the planning of IT architecture and strategy. 
+
+There are 3 different levels of Data Modeling. 
+1. Conceptual data models
+2. Logical data models
+3. Physical data models
+
+The actual modeling process:
+Conceptual -> Logical -> Physical
+
+# Conceptual data model
+It consists of high-level abstract of data elements or entities and their relationship with each other.
+Conceptual models are usually creatd as part of the process of gathering initial project requirements or understanding the business process.
+The conceptual data model provides the basis for logical data model. 
+* Entities are objects or concepts about which data is stored.
+* Relationships are connections or associations between entities. 
+
+The pros and cons are:
++ ER-Diagram presents the database structure in an easy-to-use fashion.
++ It is very easy to communicate the business needs with non-technical stakeholders.
+- It may not be able to capture complex requirements as the business scales.
+- It may not represent the final product. 
+
+# Logical data model
+It builds on top of conceptual model by providing a detailed overview of the entities in their respective relationships. 
+It identifies the attributes of each entity, defines the primary keys, and specifies the foreign keys. 
+The logical data model MUST include all attributes required for each entity. 
+Like a list of the attributes each entity contains. 
+It then needs to define which of these columns serve as the primary key for each table, and also specify foreign keys that CREATE relationships between each entity.
+
+The pros and cons are:
++ It contains more information than conceptual model such as entities, attributes, relationships and constraints. 
++ A larger fraction of business system requirements can be better expressed in terms of information than can be expressed in terms of processes. 
+- Few people can understand when it is first presented to them because it requires in-depth understanding of the business process. 
+- A highly structured data model can become rigid and less adaptable to evolving business needs as there could be entities that are very tightly linked together. 
+
+# Physical data model
+A physical data model is used to create the internal SQL schema of the database, which is implemented in the database management system. 
+The physical data model MUST outline features like datatypes, constraints, and attributes. 
+
