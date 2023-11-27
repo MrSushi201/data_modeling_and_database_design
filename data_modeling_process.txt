@@ -1,0 +1,67 @@
+# My own data modeling process: step-by-step guide
+
+1. Understand rules and requirements for the business / Define purpose:
+- What kind of data will the database store? 
+- What operations will be performed on the data?
+- Get input from stakeholders and end-users, or similar business. 
+
+2. Create a Conceptual Data Model by:
+- Identify entities.
+    - Entities/objects relevant to the business.
+- Define relationships.
+    - Identify and define relationships between entities.
+- Add attributes.
+    - Specify attributes for each entity. These are the properties or characteristics of the entities. 
+- Represent the entities, relationships, and attributes using a visual tool like an Entity-Relationship Diagram (ERD).
+
+3. Normalize the Conceptual Data Model by:
+- Normalize data (if needed).
+    - Analyze the conceptual model for potential data redundancies and anomalies. 
+      Apply normalization principles if necessary to eliminate these issues. 
+
+4. Create a Logical Data Model by:
+- Translate to tables.
+    - For each entity, create a corresponding table. Define the columns (attributes) for each table.
+- Define primary keys.
+    - Identify the primary key for each table. This is unique identifier for each record in the table. 
+- Establish relationships. 
+    - Implement relationships between tables using foreign keys. Ensure referential integrity.
+- Define constraints. 
+    - Specify constraints (e.g., unique constraints, check constraints) to enforce data integrity rules.
+
+5. Create a Physical Data Model by:
+- Choose data types.
+    - Assign appropriate data types to each column based on the requirements and the database system being used. 
+- Define indexes.
+    - Identify columns that require indexing to improve query performance. 
+- Partition data (if needed).
+    - Consider partitioning large tables to improve manageability and query performance.
+
+6. Implement the Database by:
+- Choose database system.
+    - Select a database management system (DBMS) that aligns with the project requirements. 
+- Create tables and relationships. 
+    - Use SQL or the chosen DBMS tool to create tables, relationships, and enforce constraints. 
+- Implement indexing and optimization.
+    - Implement indexing strategies and optimize the database based on usage patterns.
+
+7. Populate the database by:
+- Data population.
+    - Insert initial data into the database for testing and development. 
+
+8. Test and Refine by:
+- Perform testing.
+    - Test the database against the defined requirements. Ensure data integrity, performance, and security. 
+- Refine as needed.
+    - Make adjustments to the design based on testing results and feedback. 
+
+9. Document the database by:
+- Create documentation.
+    - Document the database schema, relationships, constraints, and any specific considerations.
+      This documentation is valuable for future maintenance and development. 
+
+10. Maintain and Evolve by:
+- Implement maintenance plan.
+    - Develop a plan for regular database maintenance, including backups, updates, and performance monitoring. 
+- Accomodate changes.
+    - Be prepared to modify the database as the application evolves and requirements change. 
