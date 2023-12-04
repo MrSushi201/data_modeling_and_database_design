@@ -1,0 +1,70 @@
+# How is data related?
+
+Data stored in a database cannot exist in isolation. 
+Data is/can be realted in a number of ways. One way is through the use of primary and foreign keys.
+A primary key is a unique identifier for a record in a database. 
+A primary key field contains unique values that cannot be replicated elsewhere in the table. 
+This avoids potential confusion between tables with similarities in data.
+
+Another type of keys is foreign key. A foreign key is a field in one table that references the primary key of another table. 
+This creates a relationship between two tables. 
+Examples:
+    Table/Entity: customers (
+        customer_id INT UNIQUE PRIMARY KEY, # An attribute of an entity
+        name VARCHAR,
+        address VARCHAR,
+        phone INT,
+        email VARCHAR
+    )
+
+    Table/Entity: consumers (
+    order_id INT,
+    customer_id INT FOREIGN KEY,
+    description VARCHAR,
+    quantity INT,
+    purchase_date DATE,
+    email VARCHAR
+    )
+
+    These two tables are linked through customer_id.
+
+Relational data example charts
+    It is important to organize data, process it, and present it efficiently to make it more useful and meaningful to people.
+    The way data is related and presented enables people to form a better understanding of existing data. 
+    This understanding can be aided by relevant charts that present data visually using combinations of text, symbols, and graphic elements to illustrate the relationships between data in a meaningful way. 
+
+    Charts can convey a great deal of information and can capture people´s attention in a way that helps them to make better decisions and take suitable actions. 
+    Below are basic charts commonly used to relate data together and present it in a simple visual way. 
+
+    Bar chart
+        A bar chart is a graph that presents categorical data with rectangular bars, where the heights of the bars are proportional to the values that they represent.
+        
+    Bubble chart
+        A bubble chart is another popular type of data chart. It shows how different values compare to each other in terms of bubble size. 
+        The smaller bubbles represent smaller values, and the larger bubbles represent larger values. 
+
+    Line chart
+        A line chart presents information as a series of data points called "markers", connected by straight line segment. 
+        Line charts are extremely popular and are widely used in most daya analytics fields. 
+        Data analysts commonly use this chart to predict the market´s future based on overall trends. 
+
+    Pie chart
+        A pie chart is another type of data chart that displays how various data make up a whole of 100 percent. 
+        In this type of chart, each data point is called a "slice" of the pie according to its value. 
+
+    In addition to the presented charts, other charts could be used for different purposes. 
+    An example is the area chart, which combines the line chart and the bar chart to compare two or more quanitites of data. 
+    Other commonly used charts include:
+        Dual axis charts
+        Gannt charts
+        Heat maps
+        Scatter plot charts
+
+What chart do I choose to present my data?
+    Some charts can serve multiple purposes, whereas others are much better at conveying specific types of information to the audience.
+    The answer to the question depends on several factors, including:
+        The target audience who will use the information
+        The idea you intend to present
+        The goal you want to achieve
+
+    
