@@ -1,0 +1,83 @@
+# Database and data
+
+What is data?
+    Data refers to the individual facts and figures that are stored in the database. 
+    Data can be quantitative or qualitative, and it can be structured or unstructured. 
+    Examples:
+    Quantitative data is numerical data.
+    Qualitative data is non-numerical data.
+    Structured data is data that is organized in a way that makes it easy to store, retrieve, and process (data in relational database).
+    Unstructured data is data that is not organized. For example, data in a text document or an image is unstructered. 
+
+What is a database?
+    A database is an organized collection of data, typically stored electronically and systematically in a computer system. 
+    Databases are designed to store, retrieve, and manage data efficiently.
+    Databases are used in a wide variaty of applications, including e-commerce, banking, and healthcare. 
+    There are many different types of databases, but they all share some common features. 
+    A database is typically divided into tables, which are collection of related data. 
+    Each table has a set of columns, which represent the different attributes of the data.
+
+Examples:
+Table/Entity: customers (
+    customer_id INT UNIQUE, # An attribute of an entity
+    name VARCHAR,
+    address VARCHAR,
+    phone INT,
+    email VARCHAR
+)
+
+Table/Entity: person (
+    name VARCHAR,
+    age INT,
+    email VARCHAR,
+    birth_date DATE
+)
+
+Table/Entity: consumers (
+    order_id INT,
+    description VARCHAR,
+    quantity INT,
+    purchase_date DATE,
+    email VARCHAR
+)
+
+Most common types of databases:
+    Relational databases are the most common type of database. 
+    They store data in tables/entities and each table has a set of columns that represent the different attributes of data. 
+
+    Object-oriented databases are a type of database that is designed to store objects, which are complex data structures that encapsulate data and behavior.
+    Object-oriented databases are not as common as relational databases, but they are used in applications that require a high degree of flexibility and scalability. 
+
+    NoSQL databases are a newer type of database that is not based on the relational model. 
+    NoSQL databases are designed to store and manage unstructured data, such as text, images, and videos. 
+    NoSQL databases are becoming popular because they are more scalable and flexible than relational databases.
+
+    Graph databases are a type of NoSQL database that store data as a network of nodes and edges. 
+    Nodes represent entities and edges represent the relationships between those entities. 
+
+    A document database, also known as a document-oriented database is a type of NoSQL database that stores data as documents.
+    Documents are self-contained units of data that can store key-value pairs, arrays, and nested objects.
+    Documents are typically stored in JSON-format, which is a human-readable and machine-parsable data. 
+    Document databases are designed to store and manage unstructured or semi-structured data. 
+
+    Columnar databases are a type of database that is designed to store data in columns rather than rows.
+    This can improve the performance of queries that involve aggregating data, such as finding the average value of a column. 
+
+    Wide-column databases are a type of database that is designed to store strucutred data. 
+    Wide-column databases are similar to NoSQL databases, but they are optimized for storing and retrieving data that is organized into columns. 
+
+How are databases managed?
+    Databases are managed by database management systems (DBMS).
+    DBMSs are software programs that provide a set of tools for creating, accessing, and manipulating data in a database. 
+    DBMSs typically support a variety of features, such as the ability to:
+    - Define the structure of a database, including the tables, columns, and data types. 
+    - Create and modify data in a database. 
+    - Retrieve data from a database. 
+    - Secure a database from unauthorized access. 
+    - Enforce data integrity, which means that the data in a database is accurate and consistent. 
+
+Where are the databases stored?
+    A database can be hosted on a dedicated machine on-site.
+    It can also be hosted on the cloud, and these are typically called cloud databases. 
+    Cloud databases are databases that are hosted on a cloud computing platform.
+    They are becoming popular because that are easy to manage and scale, and they can be accessed from anywhere. 
