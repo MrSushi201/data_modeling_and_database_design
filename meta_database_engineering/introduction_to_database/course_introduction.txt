@@ -1,37 +1,22 @@
-# Introduction to Database
-# Learning objectives
-- Explain what a database is, and what its general uses are. 
-- Explain how data is related in a database.
-- Differentiate between types of databases. 
-- Apply the syntax rules of SQL to use common SQL commands. 
-- Explain how tables are used to organize data in databases.
-- Differentiate between types of keys used in a table. 
-
-# Course Introduction & Introduction to Databases
+# Course Introduction
 Simple definition of a database:
 A form of electronic storage in which data is held. 
 
 Database tasks:
-Store data
-Form relationships
-Filter data
-Search data
-Perform CRUD operations
+- Store data
+- Form relationships
+- Filter data
+- Search data
+- Perform CRUD operations
 
 Database course topics:
-Data and database key concepts
-Forms of data relationships
-Different database structures and uses
-How to perform Create, Read, Update, and Delete or in short (CRUD) operations
-SQL operators techniques
-Data normalization concepts
-Data normalization techniques
-
-# A day in the Life of a Database Engineer
-Data is the heart of software applications.
-As a Database Engineer, you have a large influence on the development of an application.
-Focus on the HERE and NOW needs of data.
-Document your process.
+- Data and database key concepts
+- Forms of data relationships
+- Different database structures and uses
+- How to perform Create, Read, Update, and Delete or in short (CRUD) operations
+- SQL operators techniques
+- Data normalization concepts
+- Data normalization techniques
 
 # What do I hope to learn?
 I will start of by presenting my background. 
