@@ -6,6 +6,17 @@ Data refers to the individual (raw) facts, information, or observations that are
 # What is a database?
 A database is an organized collection of data, typically stored electronically and systematically. Databases are designed to store, retrieve, and manage data efficiently. Databases are used in a wide variety of applications, including e-commerce, banking, and healthcare. There are many different types of databases, but they all share some common features.
 
+### Logical database structure
+The logical structure of a database is represented using a diagram known as the Entity Relationship Diagram (ERD). It is a visual representation of how the database will be implemented into tables during physical database design, using a DBMS.
+A part of the logical database structure is how relationships are established between entities. These relationships are established between the instances of the entities. Accordingly, there can be three ways in which entity instances can be related to each other:
+- One-to-One Relationship.
+- One-to-Many Relationship.
+- Many-to-Many Relationship.
+This is also known as cardinality of relationships. 
+
+### Physical database structure
+In the physical database structure, where entities are implemented as tables, the relationships are established using field known as a foreign key. A foreign key is a field in one table that refers to a common field in another table (usually the primary key of that table).
+
 ## Most common types of databases
 1. Relational databases - store data in tables or entities, and each table has a set of columns that represent the different attributes of data.
 2. NoSQL databases - designed to store and manage unstructured (unorganized) data. 
@@ -14,34 +25,25 @@ A database is an organized collection of data, typically stored electronically a
     1, 2, 3; Supachok, Santi, Siriwan; Taweesamarn, Taweesamarn, Taweesamarn; 32, 28, 27;
     1, Supachok, Taweesamarn, 32; 2, Santi, Taweesamarn, 28; 3, Siriwan, Taweesamarn, 27;
 
-# How are databases
-
-managed?
-
+# How are databases managed?
 Databases are managed by database management system (DBMS). DBMSs are software programs that provide a set of tools for creating, accessing, and manipulating data in a database. Think of it like a digital librarian that helps organize and control data. DBMSs typically support a variety of features, such as the ability to:
-
 - Define the structure of a database, including the tables, columns, and data types.
 - Create and modify data in a database.
 - Retrieve data from a database.
 - Secure a database from unauthorized access.
 - Enforce data integrity, which means that the data in a database is accurate and consistent.
-
 A database can be hosted on a dedicated machine on-site. It can also be hosted on the cloud, and these are typically called cloud databases. Cloud databases are becoming popular because they are easy to manage and scale, and they can be accessed from anywhere.
 
 # How is data related?
-
 Data stored in a database cannot exist in isolation. Data is/can be related in a number of ways. Data in a database is organized into tables, where each table represents a specific entity or group of related data. These tables are linked together through relationships, which define how the data in each table connects to the data in other tables. In other words, the key to establishing data relationships lies in the concept of primary keys and foreign keys. A primary key is a unique identifier for each record in a table, ensuring data integrity. A foreign key, on the other hand, references the primary key of another table, forming a link between the two. 
 
 ## Types of relationships
-
 1. One-to-One - A relationship where each record in one table can be related to one and only one record in another table. 
 2. One-to-Many - A relationship where each record in one table can be related to zero, one, or many records in another table. 
 3. Many-to-Many - A relationship where multiple records in one table can be related to multiple records in another table. This relationship is typically implemented using a third table called a “junction table” to maintain the relationships. 
 
 # What are tables in databases?
-
 In the context of databases, a table is a data structure that organizes information into rows and columns. It is the fundamental structure used to store and manage data in a relational database management system (RDBMS). Examples of database management systems that use tables include MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, and SQLite. Here are some key concepts related to tables in databases:
-
 - Rows (Records) - An instance of the data that contains a set of related data fields.
 - Columns (Fields) - Attributes of the data. They define the types of data that can be stored.
 - Primary Key - A unique identifier for each record in a table. PK ensures that each record can be uniquely identified and distinguishes one record one record from another. PK is often used to establish relationships between tables or entities.
