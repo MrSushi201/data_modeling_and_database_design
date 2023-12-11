@@ -1,0 +1,102 @@
+# Intro to SQL
+
+## What is Structured Query Language?
+Structured Query Language or SQL, is a portable and standard language that can be used to interact with relational/structured data on databases. 
+SQL, or Structured Query Language, uses a specific set of commands to interact with a database through the use of RDBMS (Relational Database Management System).
+SQL databases come in a number of forms, such as Oracle Database, Microsoft SQL Server, MySQL, and PostgreSQL. 
+It includes the use of keyword-like statements to accomplish several tasks.
+The tasks can be creating, deleting, or modifying tables, retrieving, inserting, or modifying data. 
+
+## SQL usage
+SQL is the most used database query language. It is designed for retrieving and managing data in a relational database.
+SQL can be used to perform different types of operations in the database such as accessing data, describing data, manipulating data, and setting users roles and privileges.
+Here, we will learn about the main commands used in SQL. The SQL commands are grouped into four categories:
+- Data Definition Language (DDL)
+- Data Manipulation Language (DML)
+- Data Control Language (DCL)
+- Transaction Control Language (TCL)
+
+### Data Definition Language (DDL)
+The SQL Data Definition Language (DDL) category provides commands for defining, deleting, and modifying tables in a database.
+- CREATE Command - To create the database or tables inside the database. 
+    ```sql
+    -- Syntax to create a table with three columns
+    CREATE TABLE table_name (
+        column_name1 datatype(size), 
+        column_name2 datatype(size), 
+        column_name3 datatype(size)
+    );
+    ```
+- DROP Command - To delete a database or a table inside the database.
+    ```sql
+    -- Syntax to drop a table
+    DROP TABLE table_name;
+    ```
+- ALTER Command - To change the structure of the tables in the database such as changing the name of a table, adding a primary key to a table, or adding or deleting a column in a table.
+    ```sql
+    -- Syntax to add a column into a table
+    ALTER TABLE table_name
+    ADD (column_name datatype(size));
+    ```
+    ```sql
+    -- Syntax to add a primary key to a table
+    ALTER TABLE table_name
+    ADD primary key (column_name);
+    ```
+- TRUNCATE Command - To remove all records from a table, which will empty the table but not delete the table itself.
+    ```sql
+    -- Syntax to truncate a table
+    TRUNCATE TABLE table_name;
+    ```
+
+### Data Query Language (DQL)
+The SQL Data Query Language (DQL) category provides the ability to query and retrieve data from the database. 
+- SELECT Command - To retrieve data from tables in the database. 
+    ```sql
+    -- Syntax to select data from a table
+    SELECT * 
+    FROM table_name;
+    ```
+
+### Data Manipulation Language (DML)
+The SQL Data Manipulation Language (DML) category provides the ability to query, delete, and update data in the database. 
+- INSERT Command - To add records of data into an existing table.
+    ```sql
+    -- Syntax to insert data into three columns in a table.
+    INSERT INTO table_name
+        (column_name1, column_name2, column_name3)
+    VALUES
+        (value1, value2, value3);
+    ```
+- UPDATE Command - To modify or update data contained within a table in the database.
+    ```sql
+    -- Syntax to update data in two columsn
+    UPDATE table_name
+    SET
+        column_name1 = value1,
+        column_name2 = value2,
+    WHERE condition;
+    ```
+- DELETE Command - To delete data from a table in the database
+    ```sql
+    -- Syntax to delete data
+    DELETE FROM table_name
+    WHERE condition;
+    ```
+
+### Data Control Language (DCL)
+The SQL Data Control Language (DCL) category is used for dealing with the rights and permissions of users of a database system. 
+You can execute SQL commands to perform different types of operations such as create and drop tables. 
+To do this, you need to have user rights set up. This is called user privileges. This category deals with advanced functions or operations in the database. 
+Note that this category can have a generic description of the two main commands. 
+- GRANT Command - To provide the user of the database with the privileges required to allow users to access and manipulate the database.
+- REVOKE Command - To remove permissions from any user. 
+
+### Transaction Control Language (TCL)
+The Transaction Control Language (TCL) commands are used to manage transactions in the database. 
+These are used to manage the changes made to the data in a table by utilizing the DML commands.
+It also allows SQL statements to be grouped together into logical transactions.
+Note that this category can have a generic description of the two main commands. 
+- COMMIT Command - To save all the work you have already done in the database.
+- ROLLBACK Command - To restore a database to the last committed state.
+
