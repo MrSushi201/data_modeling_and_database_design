@@ -1,6 +1,6 @@
 # What are tables in databases?
-# What is data?
 
+# What is data?
 Data refers to the individual (raw) facts, information, or observations that are collected, stored, and processed. It can take various forms, including numbers, text, images, audio, and more. It can be organized (structured) or unorganized (unstructured). Data helps us learn and make decisions. Big data means really large and complex sets of information. Understanding and using data can lead to valuable insights. 
 
 # What is a database?
